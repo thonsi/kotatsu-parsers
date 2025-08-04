@@ -21,7 +21,7 @@ jobs:
                 echo "Triggering JitPack build"
                 echo "HASH DETAILS: $GIT_HASH"
             
-                PACKAGES_URL="https://jitpack.io/com/github/thonsi/kotatsu-parsers/$GIT_HASH"
+                PACKAGES_URL="https://jitpack.io/com/github/thonsi/kotatsu-parsers/$GITHUB_SHA"
                 PACKAGES_FILE="packages.txt"
                 touch ${PACKAGES_FILE}
             

@@ -36,3 +36,9 @@ jobs:
         with:
           name: 'release-artifacts'
           path: '~/.m2/repository/'
+
+      - name: Extract and print Git hash
+        run: |
+              HASH=$(git rev-parse --short HEAD)
+              echo "Short hash is: $HASH"
+              echo "GIT_HASH=$HASH" >> $GITHUB_ENV

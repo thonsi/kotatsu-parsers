@@ -49,7 +49,7 @@ jobs:
               
               echo "HASH DETAILS: ${env.GIT_HASH}"
               
-              PACKAGES_URL="https://jitpack.io/com/github/thonsi/kotatsu-parsers/${env.GIT_HASH}/"
+              PACKAGES_URL="https://jitpack.io/com/github/thonsi/kotatsu-parsers/${{ env.GIT_HASH }}"
               PACKAGES_FILE="packages.txt"
               touch ${PACKAGES_FILE}
               # Try the URL 6 times before failing
